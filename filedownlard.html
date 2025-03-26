@@ -1,1 +1,94 @@
-fg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Luka - File Download</title>
+    <link rel="icon" href="https://res.cloudinary.com/dl167vevk/image/upload/v1742956989/Logo_frxeds.png" type="Image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 54, 0.932);
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background: #33333394;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #downloadBtn {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="https://res.cloudinary.com/dl167vevk/image/upload/v1742956989/Logo_frxeds.png" alt="Logo" style="height: 40px;">
+        <a href="https://api.whatsapp.com/send/?phone=%2B94740850884&text&type=phone_number&app_absent=0" 
+           style="color: white; text-decoration: none; font-size: 20px; margin-left: auto;">Contact</a>
+        <img src="https://res.cloudinary.com/dl167vevk/image/upload/v1742956988/Contact_Icon_k4ug4g.png" alt="logo" style="height: 40px; margin-left: 10px;">
+    </nav>
+
+    <div style="margin-top: 50px;">
+        <div class="countdown" id="countdown">00:15</div>
+        <a id="downloadBtn">
+            <img src="https://res.cloudinary.com/dl167vevk/image/upload/v1742956989/downlord_vwpu1i.png" style="height: 80px; max-width: 60%;">
+        </a>
+    </div>
+
+    <script>
+        let clickCount = 0;
+
+        function startCountdown(duration, display) {
+            let timer = duration, seconds;
+            let interval = setInterval(function () {
+                seconds = timer;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = "00:" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.style.display = "none";  // Hide countdown
+                    let downloadBtn = document.getElementById("downloadBtn");
+                    downloadBtn.style.display = "inline";  
+                    setTimeout(() => downloadBtn.style.opacity = 1, 100); // Fade-in effect
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let countdownElement = document.getElementById("countdown");
+            startCountdown(15, countdownElement);  // 15-second countdown
+        };
+
+        document.getElementById('downloadBtn').onclick = function() {
+            clickCount++;
+            if (clickCount === 1) {
+                window.open("https://www.effectiveratecpm.com/xhuyg1bgy?key=f1e4061e8eeec34e96dfb93a14323ef0", "_blank");
+            } else if (clickCount === 2) {
+                window.open("https://whoushex.top/4/9112795", "_blank");
+            } else if (clickCount === 3) {
+                window.open("https://www.effectiveratecpm.com/vm9ruvz7e?key=442fe4d232674315becf0051a655d975", "_blank");
+            } else if (clickCount === 4) {
+                window.location.href = "https://sub2unlock.me/y1OscSM";
+            }
+        };
+    </script>
+
+</body>
+</html>
